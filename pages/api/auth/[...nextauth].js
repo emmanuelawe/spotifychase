@@ -57,6 +57,8 @@ import SpotifyProvider from "next-auth/providers/spotify"
       }),
     ],
 
+   secret: process.env.NEXTAUTH_SECRET,
+
     pages: {
       signIn: '/auth/signin',
     },
